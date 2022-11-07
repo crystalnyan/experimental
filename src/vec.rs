@@ -13,7 +13,8 @@ pub fn median() -> i32 {
 
   let mut raw = input.split_whitespace();
   for r in raw {
-	ints.push(r.parse::<i32>().unwrap());
+	let  value = r.parse::<i32>().expect("Failed to parse integer. Enter numbers only, separated by a space.");
+	ints.push(value);
   }
 
   ints.sort();
