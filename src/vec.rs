@@ -1,5 +1,6 @@
 use std::io;
 
+// in a sorted collection returns the element at the middle
 pub fn median() -> i32 {
   println!("Enter integer values to get the median from separated by a space: ");
   let mut input = String::new();
@@ -9,7 +10,8 @@ pub fn median() -> i32 {
 	  .expect("Failed to read line");
 
   let mut ints = Vec::new();
-  let raw = input.split_whitespace();
+
+  let mut raw = input.split_whitespace();
   for r in raw {
 	ints.push(r.parse::<i32>().unwrap());
   }
