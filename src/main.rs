@@ -1,5 +1,6 @@
-pub mod vec;
+mod vec;
 mod hashmap;
+mod box_pointer;
 
 fn main() {
   println!("Result of the median fn on given integers: {}", vec::median());
