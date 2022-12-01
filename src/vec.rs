@@ -11,7 +11,7 @@ pub fn median() -> i32 {
 
   let mut ints = Vec::new();
 
-  let mut raw = input.split_whitespace();
+  let raw = input.split_whitespace();
   for r in raw {
 	let  value = r.parse::<i32>().expect("Failed to parse integer. Enter numbers only, separated by a space.");
 	ints.push(value);
