@@ -24,6 +24,7 @@ fn roast_toasts() -> JoinHandle<()>{
     })
 }
 
+/// Multithreaded fn to emulate breakfast made with multiple threads!
 pub fn make_breakfast()
 {
     let mut handles: Vec<_> = vec![];
